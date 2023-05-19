@@ -110,3 +110,23 @@ const lengthOfLastWord = function (s) {
 
 // console.log(lengthOfLastWord("l "))
 // console.log(lengthOfLastWord("   fly me   to   the moon  "))
+
+
+const mySqrt = function (x) {
+    let num = 1
+    for (let i = 1; num < x; i++) {
+        num = i * i
+        if (num > x) {
+            return i - 1
+        }
+        if (num === x) {
+            return i
+        }
+    }
+    return x
+}
+
+// console.log(mySqrt(4))
+// console.log(mySqrt(8))
+// console.log(mySqrt(12))
+// console.log(mySqrt(0))
